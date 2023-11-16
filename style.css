@@ -4,3 +4,29 @@
   box-sizing: border-box;
   font-family: "Kaisei Decol", serif;
 }
+
+@font-face {
+  font-family: Gotham-Light;
+  src: url("./assets/fonts/Gotham/Gotham-Light.otf");
+  font-weight: light;
+}
+@font-face {
+  font-family: Gotham-Regular;
+  src: url("./assets/fonts/Gotham/GothamMedium.ttf");
+  font-weight: regular;
+}
+@font-face {
+  font-family: Gotham-Bold;
+  src: url("./assets/fonts/Gotham/Gotham-Bold.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: Gotham-Book;
+  src: url("./assets/fonts/Gotham/GothamBook.ttf");
+  font-weight: bolder;
+}
+@font-face {
+  font-family: Gotham-Bolder;
+  src: url("./assets/fonts/Gotham/Gotham-Black.otf");
+  font-weight: bolder;
+}
