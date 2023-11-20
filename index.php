@@ -2,16 +2,15 @@
 
 <div class="intro-section">
   <div class="background-image-container">
-    <div class="background-image" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/imgs/home/landing.png)">
+    <div class="background-image" style="background-image: url(<?php echo wp_get_attachment_url(get_theme_mod('nextevo_home_introduction-background-image')) ?>)">
     </div>
   </div>
   <div class="content-container container">
     <h1>
-      The catalyst that shapes today’s materials into a natural tomorrow.
+      <?php echo get_theme_mod('nextevo_home_introduction-headline'); ?>
     </h1>
     <p>
-      Join us in creating positive sustainable solutions, ensuring a future
-      where being eco-conscious goes hand-in-hand with businesses.
+      <?php echo get_theme_mod('nextevo_home_introduction-text'); ?>
     </p>
   </div>
 </div>
@@ -19,46 +18,43 @@
 <div class="zero-waste">
   <div class="block__item_wrapper block__item_wrapper-1 container">
     <h2 class="desktop-h2 zero-waste-title">
-      Zero<br />
-      Waste
+      <?php echo get_theme_mod('nextevo_home_zero-waste-headline'); ?>
     </h2>
-    <h2 class="mobile-h2 zero-waste-title">Zero Waste</h2>
+    <h2 class="mobile-h2 zero-waste-title"> <?php echo get_theme_mod('nextevo_home_zero-waste-headline'); ?></h2>
     <p class="zero-waste-paragraph">
-      Where sustainability isn’t a constraint; it’s a catalyst for limitless
-      possibilities. With each step, we make a lasting impact socially and
-      environmentally.
+      <?php echo get_theme_mod('nextevo_home_zero-waste-text'); ?>
     </p>
   </div>
   <div class="block__item_wrapper block__item_wrapper-2 container">
-    <img src="<?php echo get_template_directory_uri() ?>/assets/imgs/home/zero-waste-1.png" alt="Zero Waste Image" loading="lazy" class="zero-waste-image-1 zero-waste-image" />
+    <img src="<?php echo wp_get_attachment_url(get_theme_mod('nextevo_home_zero-waste-image-1')) ?>" alt="Zero Waste Image" loading="lazy" class="zero-waste-image-1 zero-waste-image" />
   </div>
   <div class="block__item_wrapper block__item_wrapper-3 container">
     <div class="block__item">
-      <img src="<?php echo get_template_directory_uri() ?>/assets/imgs/home/zero-waste-2.png" alt="Zero Waste Image" loading="lazy" class="zero-waste-image-2 zero-waste-image" />
+      <img src="<?php echo wp_get_attachment_url(get_theme_mod('nextevo_home_zero-waste-image-2')) ?>" alt="Zero Waste Image" loading="lazy" class="zero-waste-image-2 zero-waste-image" />
       <div class="content-container">
-        <h3>2,000,000++</h3>
-        <p class="title">KILOGRAMS</p>
-        <p class="subtitle">Targeted Coconut Husks Daily</p>
+        <h3><?php echo get_theme_mod('nextevo_home_zero-waste-image-2-title'); ?></h3>
+        <p class="title"><?php echo get_theme_mod('nextevo_home_zero-waste-image-2-subtitle'); ?></p>
+        <p class="subtitle"><?php echo get_theme_mod('nextevo_home_zero-waste-image-3-text'); ?></p>
       </div>
     </div>
   </div>
   <div class="block__item_wrapper block__item_wrapper-4 container">
     <div class="block__item">
-      <img src="<?php echo get_template_directory_uri() ?>/assets/imgs/home/zero-waste-3.png" alt="Zero Waste Image" loading="lazy" class="zero-waste-image-3 zero-waste-image" />
+      <img src="<?php echo wp_get_attachment_url(get_theme_mod('nextevo_home_zero-waste-image-3')) ?>" alt="Zero Waste Image" loading="lazy" class="zero-waste-image-3 zero-waste-image" />
       <div class="content-container">
-        <h3>100,000++</h3>
-        <p class="title">KILOGRAMS</p>
-        <p class="subtitle">Targeted Coconut Husks Daily</p>
+        <h3><?php echo get_theme_mod('nextevo_home_zero-waste-image-3-title'); ?></h3>
+        <p class="title"><?php echo get_theme_mod('nextevo_home_zero-waste-image-3-subtitle'); ?></p>
+        <p class="subtitle"><?php echo get_theme_mod('nextevo_home_zero-waste-image-3-text'); ?></p>
       </div>
     </div>
   </div>
   <div class="block__item_wrapper block__item_wrapper-5 container">
     <div class="block__item">
-      <img src="<?php echo get_template_directory_uri() ?>/assets/imgs/home/zero-waste-4.png" alt="Zero Waste Image" loading="lazy" class="zero-waste-image-4 zero-waste-image" />
+      <img src="<?php echo wp_get_attachment_url(get_theme_mod('nextevo_home_zero-waste-image-4')) ?>" alt="Zero Waste Image" loading="lazy" class="zero-waste-image-4 zero-waste-image" />
       <div class="content-container">
-        <p class="subtitle">Changing</p>
-        <h3>20,000++</h3>
-        <p class="subtitle">Small-scale Farmer' Lives</p>
+        <p class="subtitle"><?php echo get_theme_mod('nextevo_home_zero-waste-image-4-subtitle'); ?></p>
+        <h3><?php echo get_theme_mod('nextevo_home_zero-waste-image-4-title'); ?></h3>
+        <p class="subtitle"><?php echo get_theme_mod('nextevo_home_zero-waste-image-4-text'); ?></p>
       </div>
     </div>
   </div>
@@ -67,10 +63,10 @@
 <!-- Slide -->
 <div class="shelf-slider-section">
   <div class="shelf-slide shelf-slide-active" data-index="title-container-1">
-    <img src="<?php echo get_template_directory_uri() ?>/assets/imgs/home/Mask Group 1.png" class="img" />
+    <img src="<?php echo wp_get_attachment_url(get_theme_mod('nextevo_home_shelf-slider-item-1-background-image')) ?>" class="img" />
     <div class="title-container title-container-1">
       <div class="title">
-        <div>Farm to Fashion</div>
+        <div><?php echo get_theme_mod('nextevo_home_shelf-slider-item-1-headline'); ?></div>
       </div>
       <div>
         <img src="<?php echo get_template_directory_uri() ?>/assets/imgs//arrow-circle-outline.svg" class="arrow-icon" />
@@ -78,36 +74,28 @@
     </div>
 
     <div class="content-container">
-      <h2>From Farm to Fashion</h2>
+      <h2><?php echo get_theme_mod('nextevo_home_shelf-slider-item-1-title'); ?></h2>
       <p>
-        With the bioproducts that we collect, we transform them into
-        textiles that are unique and natural – our Pineapple Leaf Fibre
-        (PALF) textile is used in various categories with the major four
-        being footwear, apparel & accessories, home textiles, and upholstery
-        & interior furnishings.
+        <?php echo get_theme_mod('nextevo_home_shelf-slider-item-1-text'); ?>
       </p>
-      <button><a href="#">View Our Textiles</a></button>
+      <button><a href="<?php echo get_theme_mod('nextevo_home_shelf-slider-item-1-url'); ?>">View Our Textiles</a></button>
     </div>
   </div>
   <div class="shelf-slide" data-index="title-container-2">
     <div class="title-container title-container-2">
       <div class="title">
-        <div>Bioplastics</div>
+        <div><?php echo get_theme_mod('nextevo_home_shelf-slider-item-2-headline'); ?></div>
       </div>
       <div>
         <img src="<?php echo get_template_directory_uri() ?>/assets/imgs/arrow-circle-outline.svg" class="arrow-icon" />
       </div>
     </div>
 
-    <img src="<?php echo get_template_directory_uri() ?>/assets/imgs/home/Mask Group 1.png" class="img" />
+    <img src="<?php echo wp_get_attachment_url(get_theme_mod('nextevo_home_shelf-slider-item-2-background-image')) ?>" class="img" />
     <div class="content-container">
-      <h2>From Farm to Fashion</h2>
+      <h2><?php echo get_theme_mod('nextevo_home_shelf-slider-item-2-title'); ?></h2>
       <p>
-        With the bioproducts that we collect, we transform them into
-        textiles that are unique and natural – our Pineapple Leaf Fibre
-        (PALF) textile is used in various categories with the major four
-        being footwear, apparel & accessories, home textiles, and upholstery
-        & interior furnishings.
+        <?php echo get_theme_mod('nextevo_home_shelf-slider-item-2-text'); ?>
       </p>
       <button><a href="#">View Our Textiles</a></button>
     </div>
@@ -115,22 +103,18 @@
   <div class="shelf-slide" data-index="title-container-3">
     <div class="title-container title-container-3">
       <div class="title">
-        <div>Biochar</div>
+        <div><?php echo get_theme_mod('nextevo_home_shelf-slider-item-3-headline'); ?></div>
       </div>
       <div>
         <img src="<?php echo get_template_directory_uri() ?>/assets/imgs/arrow-circle-outline.svg" class="arrow-icon" />
       </div>
     </div>
 
-    <img src="<?php echo get_template_directory_uri() ?>/assets/imgs/home/Mask Group 1.png" class="img" />
+    <img src="<?php echo wp_get_attachment_url(get_theme_mod('nextevo_home_shelf-slider-item-3-background-image')) ?>" class="img" />
     <div class="content-container">
-      <h2>From Farm to Fashion</h2>
+      <h2><?php echo get_theme_mod('nextevo_home_shelf-slider-item-3-title'); ?></h2>
       <p>
-        With the bioproducts that we collect, we transform them into
-        textiles that are unique and natural – our Pineapple Leaf Fibre
-        (PALF) textile is used in various categories with the major four
-        being footwear, apparel & accessories, home textiles, and upholstery
-        & interior furnishings.
+        <?php echo get_theme_mod('nextevo_home_shelf-slider-item-3-text'); ?>
       </p>
       <button><a href="#">View Our Textiles</a></button>
     </div>
@@ -149,15 +133,13 @@
     </div>
     <div class="title-two">
       <span>SOCIAL</span>
-      <span> IMPACT</span>
+      <span>IMPACT</span>
     </div>
     <div class="content-container">
-      <h2 class="desktop-h2">The Farming <br />Connection</h2>
-      <h2 class="mobile-h2">The Farming Connection</h2>
+      <h2 class="desktop-h2"><?php echo get_theme_mod('nextevo_home_farming-connection-headline'); ?></h2>
+      <h2 class="mobile-h2"><?php echo get_theme_mod('nextevo_home_farming-connection-headline'); ?></h2>
       <p>
-        Our initiatives drive a positive <br />
-        chain reaction that shapes a <br />
-        greener tomorrow.
+        <?php echo get_theme_mod('nextevo_home_farming-connection-text'); ?>
       </p>
       <button>Find Out More</button>
     </div>
@@ -212,14 +194,10 @@
 <!-- end farming-connection -->
 <div style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/imgs/home/quote-bg.png)" class="quote-section">
   <p class="desktop-content">
-    As a company dedicated to leading the charge for a greener <br />
-    planet, we leave no waste behind in every step taken in our <br />
-    pledged responsibility to the environment.
+   <?php echo get_theme_mod('nextevo_home_quote-text'); ?>
   </p>
   <p class="mobile-content">
-    As a company dedicated to leading the charge for a greener planet, we
-    leave no waste behind in every step taken in our pledged responsibility
-    to the environment.
+    <?php echo get_theme_mod('nextevo_home_quote-text'); ?>
   </p>
 </div>
 
@@ -252,50 +230,43 @@
 <div class="testimonials">
   <div style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/imgs/home/testimonials.svg)" class="bg"></div>
   <div class="container">
-    <h2>Hear What They Say</h2>
+    <h2><?php echo get_theme_mod('nextevo_home_testimonials-headline'); ?></h2>
     <div class="block__items-list">
       <div class="block__item">
-        <div class="title">Brand Name</div>
+        <div class="title"><?php echo get_theme_mod('nextevo_home_testimonials-item-1-brand-name'); ?></div>
         <p>
-          Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit.
-          Pellentesque Pellentesque Euismod Tincidunt. Donec Aliquam Non
-          Ante Sed Aliquam. Phasellus Eu Pharetra Mi, Id Iaculis Lorem.
+          <?php echo get_theme_mod('nextevo_home_testimonials-item-1-text'); ?>
         </p>
-        <div class="subtitle">Name</div>
+        <div class="subtitle"><?php echo get_theme_mod('nextevo_home_testimonials-item-1-name'); ?></div>
       </div>
       <div class="block__item">
-        <div class="title">Brand Name</div>
+        <div class="title"><?php echo get_theme_mod('nextevo_home_testimonials-item-1-brand-name'); ?></div>
         <p>
-          Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit.
-          Pellentesque Pellentesque Euismod Tincidunt. Donec Aliquam Non
-          Ante Sed Aliquam. Phasellus Eu Pharetra Mi, Id Iaculis Lorem.
+          <?php echo get_theme_mod('nextevo_home_testimonials-item-2-text'); ?>
         </p>
-        <div class="subtitle">Name</div>
+        <div class="subtitle"><?php echo get_theme_mod('nextevo_home_testimonials-item-2-name'); ?></div>
       </div>
       <div class="block__item">
-        <div class="title">Brand Name</div>
+        <div class="title"><?php echo get_theme_mod('nextevo_home_testimonials-item-1-brand-name'); ?></div>
         <p>
-          Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit.
-          Pellentesque Pellentesque Euismod Tincidunt. Donec Aliquam Non
-          Ante Sed Aliquam. Phasellus Eu Pharetra Mi, Id Iaculis Lorem.
+          <?php echo get_theme_mod('nextevo_home_testimonials-item-3-text'); ?>
         </p>
-        <div class="subtitle">Name</div>
+        <div class="subtitle"><?php echo get_theme_mod('nextevo_home_testimonials-item-3-name'); ?></div>
       </div>
     </div>
     <div class="view-all-testimonials">
-      <a href="#">View All Testimonials</a>
+      <a href="<?php echo get_theme_mod('nextevo_home_testimonials-link'); ?>">View All Testimonials</a>
     </div>
   </div>
 </div>
 <!-- End Testimonials -->
 <!-- Collaborators -->
-<div s style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/imgs/home/collaborator.png)" class="collaborators-section">
+<div s style="background-image: url(<?php echo wp_get_attachment_url(get_theme_mod('nextevo_home_collaborators-background-image')) ?>)" class="collaborators-section">
   <div class="content-container">
     <p>
-      We remain dedicated to the ongoing acquisition of agricultural
-      by-products and natural fibers across the region.
+      <?php echo get_theme_mod('nextevo_home_collaborators-text'); ?>
     </p>
-    <h3>Join us in expanding our sustainable efforts.</h3>
+    <h3>  <?php echo get_theme_mod('nextevo_home_collaborators-headline'); ?></h3>
     <button>
       <a href="#">View Our Collaborators</a>
     </button>

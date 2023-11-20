@@ -31,3 +31,6 @@ function wpse248829_register_scripts()
 
 add_action('wp_enqueue_scripts', 'nextevo_5_enqueue_scripts');
 add_action('wp_enqueue_scripts', 'wpse248829_register_scripts');
+
+
+require_once(__DIR__ . '/includes/customise_control/home.php');
