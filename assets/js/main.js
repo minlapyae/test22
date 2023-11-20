@@ -401,3 +401,76 @@ gsap.registerPlugin(ScrollTrigger);
       );
   });
 })(jQuery);
+
+
+
+jQuery(document).ready(function($) {
+  const contents = [
+    {
+      title: "Bershka’s pineapple-leaf fashion, the beginning for Singapore startup",
+      description: " Harold Koh tapped the denim jacket that he laid on a conference table, wide arcs of contrast stitching swooping across its surface. A set of corset laces…"
+    },
+    {
+      title: "Title 2",
+      description: "Description 2"
+    },
+    {
+      title: "Title 3",
+      description: "Description 3"
+    },
+  ];
+
+  let currentContentIndex = 0;
+
+  function showPreviousContent() {
+    if (currentContentIndex > 0) {
+      currentContentIndex--;
+      updateContent();
+    }
+
+    handleArrows();
+  }
+
+  function showNextContent() {
+    if (currentContentIndex < contents.length - 1) {
+      currentContentIndex++;
+      updateContent();
+    }
+
+    handleArrows();
+  }
+
+  function updateContent() {
+    const titleElement = $('.latest-news-title');
+    const descriptionElement = $('.latest-news-description');
+
+    titleElement.text(contents[currentContentIndex].title);
+    descriptionElement.text(contents[currentContentIndex].description);
+  }
+
+  function handleArrows() {
+    if (currentContentIndex === 0) {
+      $('.left-arrow').addClass('disabled');
+    } else {
+      $('.left-arrow').removeClass('disabled');
+    }
+  
+    if (currentContentIndex === contents.length - 1) {
+      $('.right-arrow').addClass('disabled');
+    } else {
+      $('.right-arrow').removeClass('disabled');
+    }
+  }
+  
+  updateContent();
+  handleArrows();
+
+  $('.left-arrow').on('click', function() {
+    showPreviousContent();
+  });
+
+  $('.right-arrow').on('click', function() {
+    showNextContent();
+  });
+
+});

@@ -7,6 +7,7 @@ function nextevo_5_enqueue_scripts()
     wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.7.1.min.js', array(), null, true);
     wp_enqueue_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js',  array(), null, true);
     wp_enqueue_script('ScrollTrigger', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js',  array(), null, true);
+    wp_enqueue_script('fontawesome', 'https://kit.fontawesome.com/df75694fc6.js',  array(), null, true);
 
     if (is_front_page()) {
         wp_enqueue_script('nextevo-mainjs');
