@@ -1,3 +1,5 @@
+<?php /* Template Name: Beginnings */ ?>
+
 <?php get_header(); ?>
 
 <div class="intro-section">
@@ -233,16 +235,26 @@
     <div class="content-container">
       <a href="#" class="view-all">View All</a>
       <div class="inner-content">
-        <div class="title">
+        <div class="latest-news-title">
           Bershka’s pineapple-leaf fashion, the beginning for Singapore
           startup
         </div>
-        <p>
+        <p class="latest-news-description">
           Harold Koh tapped the denim jacket that he laid on a conference
           table, wide arcs of contrast stitching swooping across its
           surface. A set of corset laces…
         </p>
+        <div class="arrow-container">
+          <div>
+            <img src="<?php echo get_template_directory_uri() ?>/assets/imgs/arrow-circle-green-left.svg" class="left-arrow"/>
+          </div>
+          <div>
+            <img src="<?php echo get_template_directory_uri() ?>/assets/imgs/arrow-circle-green-right.svg" class="right-arrow"/>
+          </div>
+        </div>
+
       </div>
+
     </div>
   </div>
 </div>
