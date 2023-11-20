@@ -3,7 +3,8 @@
     <div class="main-container">
 
         <div class="left-container">
-            <h2>Interested in working </br>with us? Lets Talk.</h2>
+            <h2 class="desktop-h2">Interested in working </br>with us? Lets Talk.</h2>
+            <h2 class="mobile-h2">Interested in working with us? Lets Talk.</h2>
             <ul class="social-icons">
                 <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
