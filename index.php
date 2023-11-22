@@ -36,7 +36,7 @@
       <div class="content-container">
         <h3><?php echo get_theme_mod('nextevo_home_zero-waste-image-2-title'); ?></h3>
         <p class="title"><?php echo get_theme_mod('nextevo_home_zero-waste-image-2-subtitle'); ?></p>
-        <p class="subtitle"><?php echo get_theme_mod('nextevo_home_zero-waste-image-3-text'); ?></p>
+        <p class="subtitle"><?php echo get_theme_mod('nextevo_home_zero-waste-image-2-text'); ?></p>
       </div>
     </div>
   </div>
@@ -127,8 +127,7 @@
 <!-- farming-connection -->
 <div class="farming-connection-section">
   <div class="farming-connection__block-item container" style="
-          background-image: url(<?php echo get_template_directory_uri() ?>/assets/imgs/home/farming-connection-circle.svg);
-        ">
+          background-image: url(<?php echo get_template_directory_uri() ?>/assets/imgs/home/farming-connection-circle.svg);">
     <div class="title-one">
       ENVIRONMENTAL <br />
       IMPACT
@@ -145,47 +144,43 @@
       </p>
       <button>Find Out More</button>
     </div>
+    
     <div class="farming-connection-img1 farming-img-border">
-      <img src="<?php echo get_template_directory_uri() ?>/assets/imgs/home/farming-connection-1.png" alt="image" loading="lazy" />
+      <img src="<?php echo wp_get_attachment_url(get_theme_mod('nextevo_home_arming-connection-image-1')) ?>" alt="image" loading="lazy" />
       <div style="
-              background-image: url(<?php echo get_template_directory_uri() ?>/assets/imgs/home/farming-connection-overlay-bg.png);
-            " class="overlay-content">
+              background-image: url(<?php echo get_template_directory_uri() ?>/assets/imgs/home/farming-connection-overlay-bg.png);" class="overlay-content">
         <div>Fight Climate Change</div>
         <a href="#">Read More</a>
       </div>
     </div>
     <div class="farming-connection-img2 farming-img-border">
-      <img src="<?php echo get_template_directory_uri() ?>/assets/imgs/home/farming-connection-2.png" alt="image" loading="lazy" />
+      <img src="<?php echo wp_get_attachment_url(get_theme_mod('nextevo_home_arming-connection-image-2')) ?>" alt="image" loading="lazy" />
       <div style="
-              background-image: url(<?php echo get_template_directory_uri() ?>/assets/imgs/home/farming-connection-overlay-bg.png);
-            " class="overlay-content">
+              background-image: url(<?php echo get_template_directory_uri() ?>/assets/imgs/home/farming-connection-overlay-bg.png);" class="overlay-content">
         <div>Two Farming</div>
         <a href="#">Read More</a>
       </div>
     </div>
     <div class="farming-connection-img3 farming-img-border">
-      <img src="<?php echo get_template_directory_uri() ?>/assets/imgs/home/farming-connection-3.png" alt="image" loading="lazy" />
+      <img src="<?php echo wp_get_attachment_url(get_theme_mod('nextevo_home_arming-connection-image-3')) ?>" alt="image" loading="lazy" />
       <div style="
-              background-image: url(<?php echo get_template_directory_uri() ?>/assets/imgs/home/farming-connection-overlay-bg.png);
-            " class="overlay-content">
+              background-image: url(<?php echo get_template_directory_uri() ?>/assets/imgs/home/farming-connection-overlay-bg.png);" class="overlay-content">
         <div>Three Farming</div>
         <a href="#">Read More</a>
       </div>
     </div>
     <div class="farming-connection-img4 farming-img-border">
-      <img src="<?php echo get_template_directory_uri() ?>/assets/imgs/home/farming-connection-4.png" alt="image" loading="lazy" />
+      <img src="<?php echo wp_get_attachment_url(get_theme_mod('nextevo_home_arming-connection-image-4')) ?>" alt="image" loading="lazy" />
       <div style="
-              background-image: url(<?php echo get_template_directory_uri() ?>/assets/imgs/home/farming-connection-overlay-bg.png);
-            " class="overlay-content">
+              background-image: url(<?php echo get_template_directory_uri() ?>/assets/imgs/home/farming-connection-overlay-bg.png);" class="overlay-content">
         <div>Four Farming</div>
         <a href="#">Read More</a>
       </div>
     </div>
     <div class="farming-connection-img5 farming-img-border">
-      <img src="<?php echo get_template_directory_uri() ?>/assets/imgs/home/farming-connection-5.png" alt="image" loading="lazy" />
+      <img src="<?php echo wp_get_attachment_url(get_theme_mod('nextevo_home_arming-connection-image-5')) ?>" alt="image" loading="lazy" />
       <div style="
-              background-image: url(<?php echo get_template_directory_uri() ?>/assets/imgs/home/farming-connection-overlay-bg.png);
-            " class="overlay-content">
+              background-image: url(<?php echo get_template_directory_uri() ?>/assets/imgs/home/farming-connection-overlay-bg.png);" class="overlay-content">
         <div>Five Farming</div>
         <a href="#">Read More</a>
       </div>
@@ -213,7 +208,7 @@
     <div class="content-container">
       <a href="#" class="view-all">View All</a>
       <div class="inner-content">
-        <div class="latest-news-title">
+        <div class="title">
           Bershka’s pineapple-leaf fashion, the beginning for Singapore
           startup
         </div>
